@@ -12,4 +12,4 @@ jobs:
           # https://github.com/apps/openapi-release-notifier
           app_id: ${{ secrets.OPENAPI_RELEASE_NOTIFIER_APP_ID }}
           private_key: ${{ secrets.OPENAPI_RELEASE_NOTIFIER_PRIVATE_KEY }}
-          dispatch_event_type: github-openapi-release
+          dispatch_event_type: andook-openapi-release
