@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Yaml Lint
@@ -24,5 +24,6 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
+      - run: yarn build
       - name: JSON Lint
         run: npm run lint
