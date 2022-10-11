@@ -16,7 +16,7 @@ jobs:
       - name: Yaml Lint
         uses: karancode/yamllint-github-action@master
         with:
-          yamllint_file_or_dir: 'descriptions/**/*.yaml'
+          yamllint_file_or_dir: 'generated/**/*.yaml'
           yamllint_strict: false
           yamllint_config_filepath: '.yamllint-config.yml'
           yamllint_comment: true
@@ -24,6 +24,5 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
-      - run: yarn build
       - name: JSON Lint
         run: npm run lint

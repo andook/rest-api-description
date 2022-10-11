@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint descriptions/**/*.json --ext .json",
+    "lint": "eslint generated/**/*.json --ext .json",
     "build": "node ./scripts/build.js"
   },
   "devDependencies": {
