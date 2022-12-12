@@ -13,9 +13,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18.x
           cache: 'yarn'
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
